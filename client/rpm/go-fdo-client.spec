@@ -24,7 +24,10 @@ go-fdo-client is a tool for performing onboarding of IoT devices}
 
 Name:           go-fdo-client
 Version:        0
-Release:        %autorelease -p
+
+## TODO: autorelease not working for C9?
+## Release:        %%autorelease -p
+Release:        0%{?dist}
 Summary:        IoT FIDO device onboarding tool
 
 License:        Apache-2.0
