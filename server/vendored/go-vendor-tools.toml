@@ -1,0 +1,8 @@
+[archive]
+compression_type = "bz2"
+
+[licensing]
+detector = "scancode"
+
+[licensing.detector_config]
+multiple = "true"
