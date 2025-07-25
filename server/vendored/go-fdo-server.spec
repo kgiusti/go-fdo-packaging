@@ -14,6 +14,9 @@
 %gometa -L -f
 
 %global common_description %{expand:
+go-fdo-server is the server implementation of FIDO Device Onboard
+specification in Go. It provides an FDO server that can function
+in the roles of manufacturer, rendezvous, and owner.
 }
 
 Name:           go-fdo-server
@@ -44,9 +47,6 @@ BuildRequires:  go-vendor-tools+scancode
 
 %build
 %global gomodulesmode GO111MODULE=on
-#for cmd in cmd/* ; do
-#  %%gobuild -o %%{gobuilddir}/bin/$(basename $cmd) %%{goipath}/$cmd
-#done
 %gobuild -o %{gobuilddir}/bin/go-fdo-server %{goipath}
 
 %install
