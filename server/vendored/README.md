@@ -28,7 +28,7 @@ detector = "scancode"
 multiple = "true"
 ```
 
-No un the go2rpm command using the _vendor_ profile:
+Now run the go2rpm command using the _vendor_ profile:
 
 `$ go2rpm --download --name go-fdo-server --profile vendor github.com/fido-device-onboard/go-fdo-server`
 

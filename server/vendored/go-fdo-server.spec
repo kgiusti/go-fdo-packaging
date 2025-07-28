@@ -32,8 +32,7 @@ Source0:        %{gosource}
 Source1:        %{archivename}-vendor.tar.bz2
 Source2:        go-vendor-tools.toml
 
-BuildRequires:  scancode-toolkit
-BuildRequires:  go-vendor-tools+scancode
+BuildRequires:  go-vendor-tools
 
 %description %{common_description}
 
