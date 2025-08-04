@@ -11,8 +11,11 @@ Install the necessary go vendor tooling:
 
 `$ dnf install go2rpm scancode-toolkit go-vendor-tools+scancode`
 
-Create a config file for the go-vendor-tools called _go-vendor-tools.toml_
-Refer to https://fedora.gitlab.io/sigs/go/go-vendor-tools for documentation.
+Create a config file for the go-vendor-tools called
+_go-vendor-tools.toml_ Refer to
+https://fedora.gitlab.io/sigs/go/go-vendor-tools for documentation.
+I'm selecting the askalono lincense detector because it requires less
+dependencies than the other options.
 
 A basic config file:
 
@@ -22,7 +25,7 @@ A basic config file:
 compression_type = "bz2"
 
 [licensing]
-detector = "scancode"
+detector = "askalono"
 
 [licensing.detector_config]
 multiple = "true"
